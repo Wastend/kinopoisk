@@ -1,9 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import MovieList from './pages/MovieList.tsx';
-import MovieDetail from './pages/MovieDetail.tsx';
-import RandomMovie from './pages/RandomMovie.tsx';
-import './App.css';
+import MovieList from './pages/MovieList/MovieList.tsx';
+import MovieDetail from './pages/MovieDetail/MovieDetail.tsx';
+import RandomMovie from './pages/RandomMovie/RandomMovie.tsx';
 
 function App() {
   return (

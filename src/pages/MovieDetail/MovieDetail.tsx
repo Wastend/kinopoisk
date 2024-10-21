@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import { Movie } from '../services/movie';
+import { Movie } from '../../services/movie';
+import './MovieDetail.css'
 
 const API_URL = 'https://api.kinopoisk.dev/v1.4/movie';
 

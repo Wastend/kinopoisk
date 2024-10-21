@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { Movie } from '../services/movie';
+import { Movie } from '../../services/movie';
+import './RandomMovie.css'
 
 const API_URL = 'https://api.kinopoisk.dev/v1.4/movie/random';
 

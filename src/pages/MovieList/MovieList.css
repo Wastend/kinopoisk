@@ -1,0 +1,129 @@
+.movie-list-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.movies_list {
+    display: grid;
+    gap: 20px;
+    grid-gap: 20px;
+    width: 80%;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.movie-list-block > * {
+    margin-top: 30px;
+}
+
+.search-block {
+    display: flex;
+    align-items: center;
+}
+
+.search-block input {
+    width: 250px;
+    height: 40px;
+    font-size: 18px;
+    padding: 6px 20px;
+    background-color: #e5e5e5;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    color: #505050;
+    transition: .6s;
+}
+
+.search-block input:focus,
+.search-block input:focus-visible {
+    background-color: #dedede;
+}
+
+.search-block input::placeholder {
+    color: #505050;
+    font-size: 18px;
+}
+
+.search-block button {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+    padding: 0;
+    background: 0;
+    border: 0;
+}
+
+.movies_list a {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #ffffff;
+    box-shadow: 2px 4px 9px 1px #9f9f9f;
+    height: 100%;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.movies_list li img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: .6s;
+    box-shadow: 0px 0px 10px 4px rgb(111, 111, 111);
+}
+
+.movies_list li a,
+.movies_list li p {
+    text-decoration: none;
+}
+
+.movies_list li h2 {
+    font-size: 24px;
+    line-height: 1.2;
+    margin-top: 16px;
+    font-weight: bold;
+    transition: .6s;
+    color: #505050;
+}
+
+.movies_list li p {
+    color: #505050;
+}
+
+.movie-top,
+.movie-bottom {
+    display: flex;
+    flex-direction: column;
+}
+
+.movie-bottom {
+    margin-top: 10px;
+}
+
+.movie-year {
+    margin-top: 8px;
+    font-size: 16px;
+}
+
+.movie-genres {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.movie-genres li {
+    border-radius: 10px;
+    color: #505050;
+    font-size: 16px;
+    padding: 5px 10px;
+    background-color: #e5e5e5;
+}
+
+.movies_list a:hover img,
+.movies_list a:active img{
+    opacity: .8;
+}
